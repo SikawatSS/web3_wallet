@@ -11,11 +11,7 @@ class BalanceFixture {
 
   /// Zero balance response
   static Map<String, dynamic> zeroBalanceResponse() {
-    return {
-      'status': '1',
-      'message': 'OK',
-      'result': '0',
-    };
+    return {'status': '1', 'message': 'OK', 'result': '0'};
   }
 
   /// Very large balance response (1000 ETH)
@@ -29,10 +25,7 @@ class BalanceFixture {
 
   /// Invalid response (missing result field)
   static Map<String, dynamic> missingResultResponse() {
-    return {
-      'status': '1',
-      'message': 'OK',
-    };
+    return {'status': '1', 'message': 'OK'};
   }
 
   /// Invalid response (wrong type)

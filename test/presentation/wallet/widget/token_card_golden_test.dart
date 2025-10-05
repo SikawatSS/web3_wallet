@@ -18,11 +18,7 @@ void main() {
       );
 
       // Act
-      await tester.pumpWidget(
-        createTestWidget(
-          TokenCard(coin: tokenBalance),
-        ),
-      );
+      await tester.pumpWidget(createTestWidget(TokenCard(coin: tokenBalance)));
 
       // Assert
       await expectLater(
@@ -43,11 +39,7 @@ void main() {
       );
 
       // Act
-      await tester.pumpWidget(
-        createTestWidget(
-          TokenCard(coin: tokenBalance),
-        ),
-      );
+      await tester.pumpWidget(createTestWidget(TokenCard(coin: tokenBalance)));
 
       // Assert
       await expectLater(
@@ -68,11 +60,7 @@ void main() {
       );
 
       // Act
-      await tester.pumpWidget(
-        createTestWidget(
-          TokenCard(coin: tokenBalance),
-        ),
-      );
+      await tester.pumpWidget(createTestWidget(TokenCard(coin: tokenBalance)));
 
       // Assert
       await expectLater(

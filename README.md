@@ -98,8 +98,8 @@ flutter test --update-goldens test/presentation/wallet/widget/
 - **Widget Tests**: UI components, loading states, error handling
 - **Integration Tests**: Repository implementations, data sources
 - **BLoC Tests**: State management and event handling
-- **Golden Tests** ✨ (Bonus): UI snapshot/visual regression tests
-- **Property-Based Tests** ✨ (Bonus): Mathematical property verification with random inputs
+- **Golden Tests**: UI snapshot/visual regression tests
+- **Property-Based Tests**: Mathematical property verification with random inputs
 
 ### Bonus Tests Implemented
 

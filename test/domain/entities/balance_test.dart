@@ -57,7 +57,9 @@ void main() {
 
       test('should convert very large amount correctly', () {
         // Arrange - 1000 ETH
-        final balance = Balance(weiAmount: BigInt.parse('1000000000000000000000'));
+        final balance = Balance(
+          weiAmount: BigInt.parse('1000000000000000000000'),
+        );
 
         // Act
         final ethAmount = balance.ethAmount;
@@ -151,7 +153,9 @@ void main() {
 
       test('should handle large balance', () {
         // Arrange - 100 ETH
-        final balance = Balance(weiAmount: BigInt.parse('100000000000000000000'));
+        final balance = Balance(
+          weiAmount: BigInt.parse('100000000000000000000'),
+        );
         const expectedUsdt = 4464.07 * 100;
 
         // Act
