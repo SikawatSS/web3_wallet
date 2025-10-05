@@ -1,0 +1,19 @@
+{
+  "@@locale": "th",
+  "balance": "ยอดเงิน",
+  "tokenBalances": "ยอดเงิน",
+  "loading": "กำลังโหลด",
+  "error": "เกิดข้อผิดพลาด",
+  "retry": "ลองอีกครั้ง",
+  "tryAgain": "ลองอีกครั้ง",
+  "unknownError": "เกิดข้อผิดพลาด",
+  "unknownErrorDescription": "เกิดข้อผิดพลาด\nกรุณาลองอีกครั้ง",
+  "unknownErrorButton": "OK",
+  "overview": "ภาพรวม",
+  "crypto": "Crypto",
+  "totalValue": "ค่ารวม",
+  "estTotalValue": "ค่ารวม",
+  "eth": "ETH",
+  "usdt": "USDT",
+  "wallet" : "Wallet : "
+}

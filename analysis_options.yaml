@@ -1,0 +1,27 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    - prefer_const_constructors # ใช้ const constructors เมื่อเป็นไปได้
+    - prefer_const_literals_to_create_immutables # ใช้ const กับ literals
+    - prefer_const_declarations # ใช้ const กับ declarations
+    - avoid_unnecessary_containers # หลีกเลี่ยง Container ที่ไม่จำเป็น
+    - prefer_single_quotes # ใช้ single quotes แทน double quotes
+    - sort_unnamed_constructors_first # เรียง unnamed constructors ไว้ก่อน
+
+    - avoid_print # หลีกเลี่ยงการใช้ print() ใน production
+    - avoid_web_libraries_in_flutter # หลีกเลี่ยง web libraries ใน Flutter
+    - no_logic_in_create_state # ไม่ใส่ logic ใน createState()
+    - prefer_is_empty # ใช้ isEmpty แทน length == 0
+    - prefer_is_not_empty # ใช้ isNotEmpty แทน length != 0
+
+    # === PERFORMANCE ===
+    - prefer_final_fields # ใช้ final กับ fields ที่ไม่เปลี่ยนแปลง
+    - prefer_final_locals # ใช้ final กับ local variables
+    - unnecessary_new # ไม่ต้องใช้ keyword 'new'
+    - unnecessary_const # เอา const ที่ไม่จำเป็นออก
+
+    # === NAMING CONVENTIONS ===
+    - camel_case_types # ใช้ camelCase สำหรับ types
+    - file_names # ใช้ snake_case สำหรับชื่อไฟล์
+

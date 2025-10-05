@@ -1,0 +1,19 @@
+{
+  "@@locale": "en",
+  "balance": "Balance",
+  "tokenBalances": "Token Balances",
+  "loading": "Loading",
+  "error": "Error",
+  "retry": "Retry",
+  "tryAgain": "Try Again",
+  "unknownError": "Unknown Error",
+  "unknownErrorDescription": "Something went wrong.\nPlease try again.",
+  "unknownErrorButton": "OK",
+  "overview": "Overview",
+  "crypto": "Crypto",
+  "totalValue": "Total Value",
+  "estTotalValue": "Est. Total Value",
+  "eth": "ETH",
+  "usdt": "USDT",
+  "wallet" : "Wallet : "
+}
