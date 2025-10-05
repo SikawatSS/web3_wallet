@@ -95,20 +95,12 @@ class TokenBalanceFixture {
 
   /// Empty token list response
   static Map<String, dynamic> emptyTokenListResponse() {
-    return {
-      'status': '1',
-      'message': 'OK',
-      'result': [],
-    };
+    return {'status': '1', 'message': 'OK', 'result': []};
   }
 
   /// No transactions found (status 0)
   static Map<String, dynamic> noTransactionsResponse() {
-    return {
-      'status': '0',
-      'message': 'No transactions found',
-      'result': null,
-    };
+    return {'status': '0', 'message': 'No transactions found', 'result': null};
   }
 
   /// All outgoing transfers (zero balance)

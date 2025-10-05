@@ -46,10 +46,7 @@ void main() {
         final json = BalanceFixture.missingResultResponse();
 
         // Act & Assert
-        expect(
-          () => BalanceModel.fromJson(json),
-          throwsA(isA<TypeError>()),
-        );
+        expect(() => BalanceModel.fromJson(json), throwsA(isA<TypeError>()));
       });
 
       test('should throw exception when result is wrong type', () {
@@ -57,10 +54,7 @@ void main() {
         final json = BalanceFixture.invalidTypeResponse();
 
         // Act & Assert
-        expect(
-          () => BalanceModel.fromJson(json),
-          throwsA(isA<TypeError>()),
-        );
+        expect(() => BalanceModel.fromJson(json), throwsA(isA<TypeError>()));
       });
 
       test('should handle result as error string', () {

@@ -8,8 +8,14 @@ void main() {
     // Helper to generate random BigInt values
     BigInt randomBigInt(int maxBits) {
       final random = Random();
-      final bytes = List<int>.generate(maxBits ~/ 8, (_) => random.nextInt(256));
-      return BigInt.parse(bytes.map((b) => b.toRadixString(16).padLeft(2, '0')).join(), radix: 16);
+      final bytes = List<int>.generate(
+        maxBits ~/ 8,
+        (_) => random.nextInt(256),
+      );
+      return BigInt.parse(
+        bytes.map((b) => b.toRadixString(16).padLeft(2, '0')).join(),
+        radix: 16,
+      );
     }
 
     test('Property: Wei to ETH conversion is always non-negative', () {
@@ -41,10 +47,7 @@ void main() {
         final balance2 = Balance(weiAmount: weiAmount * BigInt.from(2));
 
         // Property: balance2 should be 2x balance1
-        expect(
-          balance2.ethAmount,
-          closeTo(balance1.ethAmount * 2, 0.000001),
-        );
+        expect(balance2.ethAmount, closeTo(balance1.ethAmount * 2, 0.000001));
       }
     });
 
